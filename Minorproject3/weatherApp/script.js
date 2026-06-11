@@ -13,7 +13,11 @@ async function getweather(city){
     let response = await fetch(url)
 
     let data = await response.json()
-
+    
+    if(data.cod != 200){
+      alert("City not found!");
+      return;
+    }
     console.log(data)
     cityName.innerText = data.name + ", " + data.sys.country
 
@@ -33,4 +37,3 @@ async function getweather(city){
     console.log("Error fetching")
   }
 }
-
