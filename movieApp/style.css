@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    color: white;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+.Container{
+    text-align: center;
+    padding: 25px;
+}
+
+h1{
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size:15px;
+    opacity: 0.8;
+}
+
+input{
+    width: 250px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input:hover{
+  transform: scale(1.1);
+}
+
+button{
+    border: none;
+    border-radius:10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 1px 2px 4px white;
+    margin: 15px;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+#movieContainer{
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.movie-card{
+    background-color: rgba(255,255,255,0.15);
+    width:500px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.3s;
+    
+}
+
+.movie-card:hover{
+    transform: scale(1.05);
+    transition: 2s;
+    box-shadow: 1px 3px 5px black;
+}
+
+.movie-card img{
+    width:100%;
+    height:auto;
+    object-fit:cover;
+}
+
+.movie-card h2{
+    margin: 10px;
+}
+
+.movie-card p{
+    margin: 5px;
+}
